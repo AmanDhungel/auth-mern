@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import {create} from 'zustand';
 
-const API_URL = 'http://localhost:3000/api/auth'
+const API_URL = 'http://localhost:5000/api/auth'
 
 axios.defaults.withCredentials = true;
 export const useAuthStore =  create((set) => ({
