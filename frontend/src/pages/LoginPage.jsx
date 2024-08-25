@@ -16,6 +16,9 @@ const {error, login, isLoading} = useAuthStore();
 async function  handleLogin(e){
 e.preventDefault();
 try {
+  if(!email || !password){
+    return toast.error('Please fill in all fields');
+  }
   await login(email, password);
 } catch (error) {
   toast.warn("password or email doesnot exist")
