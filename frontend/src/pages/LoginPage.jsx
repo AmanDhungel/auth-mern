@@ -49,7 +49,7 @@ navigate('/home');
           font-bold tracking-widest'
           disabled={isLoading}
           whileHover={{scale: 1.02}}
-          whileTap={{scale: 0.98}}>{isLoading? <Loader className='w-6 h-6 animate-spin mx-auto' /> : "Login"}</motion.button>
+          whileTap={{scale: 0.98}}>{isLoading ? <Loader className='w-6 h-6 animate-spin mx-auto' /> : "Login"}</motion.button>
           {error && <p className='text-red-500 text-2xl'> {error}</p>}
       </form>
     <p className='bg-amber-800 w-[450px] -ml-8 text-center flex justify-center p-3 relative -bottom-8 gap-2'>
