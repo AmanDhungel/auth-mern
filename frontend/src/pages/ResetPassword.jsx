@@ -41,7 +41,7 @@ const ResetPassword = () => {
   className='max-w-md bg-amber-300 bg-opacity-80 
   backdrop-filter backdrop-blur-xl rounded-2xl
   shadow-2xl overflow-hidden p-4'>
-    <h1 className='items-center text-2xl text-emerald-700 text-center mb-4'>Forgot Password</h1>
+    <h1 className='items-center text-2xl text-emerald-700 text-center mb-4'>Reset Password</h1>
      <Input icon={Lock} type='password' placeholder='New Password'  value={password} onChange={(e) => setPassword(e.target.value)} />
      <Input icon={Lock} type='password' placeholder='Confirm Password'  onChange={(e) => setCPassword(e.target.value)} />
      <motion.button type='submit' className='flex w-full bg-gradient-to-r
