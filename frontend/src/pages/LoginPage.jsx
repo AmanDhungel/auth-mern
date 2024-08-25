@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Loader } from 'lucide-react';
 import { useAuthStore } from '../store/authStore';
+import { toast } from 'react-toastify';
 const LoginPage = () => {
   const navigate = useNavigate();
 const [email, setEmail] = useState()
@@ -17,6 +18,8 @@ e.preventDefault();
 try {
   await login(email, password);
 } catch (error) {
+  toast.warn("password or email doesnot exist")
+  navigate('/')
   console.log(error.message)
 }
 navigate('/home');
