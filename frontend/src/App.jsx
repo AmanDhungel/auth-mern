@@ -15,7 +15,7 @@ import { SmileIcon } from "lucide-react"
 const RedirectProtectedRoute = ({children}) => {
   const {isAuthenticated, user} = useAuthStore();
   if(!isAuthenticated && !user){
-    return <Navigate to="/login" replace={true} />
+    return <Navigate to="/" replace={true} />
   }
   return children
 }
